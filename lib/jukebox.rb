@@ -21,6 +21,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.chomp
   i = 0
+  current_song
   while songs[i]
     binding.pry
       if  input == (i + 1).to_s
@@ -29,12 +30,10 @@ def play(songs)
       elsif  songs[i] == input
         puts "Playing #{songs[i]}"
         # binding.pry
-      else
-        puts "Invalid input, please try again"
-        #binding.pry
       end
       i+=1
   end
+  
 end
   
 def exit_jukebox
