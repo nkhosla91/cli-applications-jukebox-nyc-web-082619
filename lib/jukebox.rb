@@ -24,10 +24,10 @@ def play(songs)
   while songs[i]
     #binding.pry
       if  input == i + 1
-        puts "Playing #{song}"
+        puts "Playing #{songs[i]}"
         # binding.pry
       elsif  song[i] == input
-        puts "Playing #{song}"
+        puts "Playing #{songs[i]}"
         # binding.pry
       else
         puts "Invalid input, please try again"
