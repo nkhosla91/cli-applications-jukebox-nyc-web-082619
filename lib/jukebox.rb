@@ -21,7 +21,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.chomp
   i = 0
-  current_song
+  current_song = ""
   while songs[i]
     binding.pry
       if  input == (i + 1).to_s
