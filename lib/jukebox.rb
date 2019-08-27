@@ -24,7 +24,7 @@ def play(songs)
 #binding.pry
       if  input == (index + 1).to_s
         puts "Playing #{song}"
-        #binding.pry
+        binding.pry
       elsif  song == input
         puts "Playing #{song}"
       else
