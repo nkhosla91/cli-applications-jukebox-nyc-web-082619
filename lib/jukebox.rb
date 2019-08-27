@@ -37,7 +37,7 @@ def play(songs)
   end
   
   if current_song != ""
-    puts "Playing #{songs[i]}"
+    puts "Playing #{current_song}"
   else
     puts "Invalid input, please try again"
 end
