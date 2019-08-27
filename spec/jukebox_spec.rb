@@ -28,9 +28,8 @@ describe "CLI Jukebox" do
 
     describe '#play' do
       it "can find a song when given a number from the user" do
-        
-        expect( $stdout ).to receive(:puts).with(/Please enter a song name or number:/)
         allow(self).to receive(:gets).and_return("1")
+        expect( $stdout ).to receive(:puts).with(/Please enter a song name or number:/)
         expect( $stdout ).to receive(:puts).with(/Phoenix - 1901/)
         expect( $stdout ).to_not receive(:puts).with(/Tokyo Police Club - Wait Up/)
         play(songs)
