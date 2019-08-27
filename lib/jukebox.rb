@@ -26,7 +26,7 @@ def play(songs)
       if  input == i + 1
         puts "Playing #{songs[i]}"
         # binding.pry
-      elsif  song[i] == input
+      elsif  songs[i] == input
         puts "Playing #{songs[i]}"
         # binding.pry
       else
