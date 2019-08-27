@@ -23,7 +23,7 @@ def play(songs)
   i = 0
   current_song = ""
   while songs[i]
-    binding.pry
+    # binding.pry
       if  input == (i + 1).to_s
         current_song = songs[i]
         # puts "Playing #{songs[i]}"
