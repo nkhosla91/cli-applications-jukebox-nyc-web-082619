@@ -22,11 +22,11 @@ def play(songs)
   input = gets.chomp
   i = 0
   while songs[i]
-#binding.pry
-      if  input == (index + 1).to_s
+    #binding.pry
+      if  input == i + 1
         puts "Playing #{song}"
         # binding.pry
-      elsif  song == input
+      elsif  song[i] == input
         puts "Playing #{song}"
         # binding.pry
       else
