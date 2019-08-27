@@ -22,7 +22,7 @@ def play(songs)
   input = gets.chomp
   i = 0
   while songs[i]
-    #binding.pry
+    binding.pry
       if  input == i + 1
         puts "Playing #{songs[i]}"
         # binding.pry
