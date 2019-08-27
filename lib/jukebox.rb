@@ -25,16 +25,19 @@ def play(songs)
   while songs[i]
     binding.pry
       if  input == (i + 1).to_s
-        current_song = 
-        puts "Playing #{songs[i]}"
+        current_song = songs[i]
+        # puts "Playing #{songs[i]}"
         # binding.pry
       elsif  songs[i] == input
-        puts "Playing #{songs[i]}"
+        current_song = songs[i]
+        # puts "Playing #{songs[i]}"
         # binding.pry
       end
       i+=1
   end
   
+  if current_song != ""
+    puts 
 end
   
 def exit_jukebox
