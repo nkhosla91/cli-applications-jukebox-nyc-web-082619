@@ -38,6 +38,8 @@ def play(songs)
   
   if current_song != ""
     puts 
+  else
+    puts "Invalid input, please try again"
 end
   
 def exit_jukebox
